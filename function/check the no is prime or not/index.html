@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prime no</title>
+  </head>
+  <body>
+    <script>
+
+        
+      function prime_no_series(no) 
+      {
+            if (no < 1) 
+            {
+                value = false;
+            }
+
+                for (let i = 2; i <= Math.sqrt(no); i++) 
+                {
+                        if (no % i == 0)
+                         {
+                            value = false;
+                         }
+                }
+
+                      if ( value == true) 
+                      {
+                        document.write(`${no} is a prime number`);
+                      } 
+                        
+                            else 
+                            {
+                               document.write(`${no} is not a prime number`);
+                            }
+      }
+
+      let value = true;
+
+      let n = prompt("Enter a number: ");
+      n = parseInt(n);
+
+      prime_no_series(n);
+
+
+    </script>
+  </body>
+</html>

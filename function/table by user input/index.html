@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table By Userinput</title>
+  </head>
+  <body>
+
+    <script>
+        
+      function table(n)
+     
+      {
+        for (let i = 1; i <= n; i++) 
+           {
+                 for (let j = 1; j <= 10; j++)
+                 {
+                     document.write(`${i} * ${j} = ${i * j} <br>`);
+                 }
+             document.write("<br>");
+           }
+      }
+
+      let no = prompt("Enter the value : ");
+
+      table(no);
+
+
+
+    </script>
+  </body>
+</html>

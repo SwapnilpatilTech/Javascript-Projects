@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function arms(n, num) 
+      {
+            let sum = 0;
+
+                for (let i = 1; i <= n; i++) 
+                {
+                    let x = n % 10;
+                    sum = sum + Math.pow(x, 3);
+
+                    n = n / 10;
+                    n = Math.floor(n);
+                }
+
+                        if (num == sum) 
+                        {
+                        console.log(`${num} is a armstrong number `);
+                        } 
+                        else 
+                        {
+                        console.log(`${num} is not a armstrong number `);
+                        }
+      }
+
+                                            let n = prompt("Enter the value: ");
+                                            let nums= n.length;
+                                            n = parseInt(n);
+
+                                            arms(nums, n);
+    </script>
+  </body>
+</html>

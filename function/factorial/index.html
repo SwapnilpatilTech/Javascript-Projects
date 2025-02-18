@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>factorial</title>
+  </head>
+  <body>
+    <script>
+      function fact(num)
+       {
+            
+         let factorialno = 1;
+
+            
+             for (let i = num; i >= 1; i--)
+             {
+                factorialno= factorialno * i;
+             }
+
+                 document.write(`factorial of ${num} = ${factorialno}`);
+      }
+
+         let n = prompt("Enter a number to check the factorial: ");
+         n = parseInt(n);
+
+      fact(n);
+    </script>
+  </body>
+</html>
