@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Print Numbers from N to 1</title>
+  </head>
+  <body>
+    <script>
+      function print(n)
+       {
+        if (n === 0)
+         {
+            console.log(n); 
+            print(n - 1); 
+        }
+        else
+        {
+          return ;
+        }
+      }
+      let n = prompt("enter the value");
+      console.log(`Numbers from ${n} to 1:`);
+      print(n);
+    </script>
+  </body>
+</html>
