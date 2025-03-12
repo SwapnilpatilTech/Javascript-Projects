@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //  accending and decending
+
+      let ad = [49, 55, 8, 59, 22, 84, 5, 10, 0];
+
+    
+      for (let i = 0; i < ad.length; i++)
+       {
+        for (let j = i + 1; j < ad.length; j++) 
+        {
+          if (ad[i] > ad[j]) {
+            let temp = ad[i];
+            ad[i] = ad[j];
+            ad[j] = temp;
+          }
+        }
+      }
+
+      console.log(arr);
+    </script>
+  </body>
+</html>

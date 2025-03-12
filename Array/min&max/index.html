@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let obt = [45, 55, 65, 75, 85, 90, 95];
+      let min;
+      let max;
+
+      for (let i = 0; i <= obt.length - 1; i++) 
+      {
+        for (let j = i + 1; j <= obt.length - 1; j++) 
+        {
+          if (marks[i] > obt[j]) 
+          {
+            max = obt[i];
+          } 
+          else
+           {
+            min = obt[j];
+          }
+        }
+      }
+
+      console.log(`min = ${min}, max = ${max}`);
+    </script>
+  </body>
+</html>
