@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Employee Class with Attributes: ID, Name, Salary, and Role -->
+    <script>
+        class Employee {
+    constructor(id, name, salary, role) {
+        this.id = id;
+        this.name = name;
+        this.salary = salary;
+        this.role = role;
+    }
+
+    display() {
+        document.writeln(`<br>ID: ${this.id}, Name: ${this.name}, Salary: ${this.salary}, Role: ${this.role}`);
+    }
+}
+
+//  Employee objects
+const emp1 = new Employee(101, "Akhil", 45000, "Developer");
+const emp2 = new Employee(102, "Raj", 50000, "Designer");
+const emp3 = new Employee(103, "Meera", 70000, "Manager");
+
+//  Employee details
+document.writeln("\nEmployee Details:");
+emp1.display();
+emp2.display();
+emp3.display();
+
+    </script>
+</body>
+</html>
