@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Student Class with Private Attributes and Parameter Constructor -->
+     <script>
+        class Student {
+    #roll_no;   // Private attribute
+    #name;    
+    #age;       
+    #std;       
+    #percentage; 
+
+    constructor(roll_no, name, age, std, percentage) {
+        this.#roll_no = roll_no;
+        this.#name = name;
+        this.#age = age;
+        this.#std = std;
+        this.#percentage = percentage;
+    }
+
+    // Display method
+    print() {
+        document.writeln(`Roll No: ${this.#roll_no}, Name: ${this.#name}, Age: ${this.#age}, Class: ${this.#std}, Percentage: ${this.#percentage}%`);
+    }
+}
+
+//  Student objects
+const student1 = new Student(1, "Amol", 17, "12th", 79.2);
+const student2 = new Student(2, "Rahul", 19, "11th", 82.9);
+const student3 = new Student(3, "Pankaj", 20, "12th", 65.3);
+
+// student details
+document.writeln("\nStudent Details:");
+student1.print();
+student2.print();
+student3.print();
+
+     </script>
+</body>
+</html>

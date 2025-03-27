@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Animal Class with Private Attributes and Secure Access -->
+   
+    <script>
+        class Animal {
+    #name;    // Private attribute
+    #type;    
+    #gender;  
+    #age;     
+
+    constructor(name, type, gender, age) {
+        this.#name = name;
+        this.#type = type;
+        this.#gender = gender;
+        this.#age = age;
+    }
+
+    // Getter methods to access private attributes
+    print() {
+        document.writeln(`<br>Animal: ${this.#name}, Type: ${this.#type}, Gender: ${this.#gender}, Age: ${this.#age} years`);
+    }
+}
+
+// Creating Animal objects
+const animal1 = new Animal("Lion", "Wild", "Male", 5);
+const animal2 = new Animal("Dog", "Domestic", "Female", 3);
+const animal3 = new Animal("Parrot", "Bird", "Male", 2);
+
+//  animal details
+document.writeln("\nAnimal Details:");
+animal1.print();
+animal2.print();
+animal3.print();
+
+    </script>
+</body>
+</html>

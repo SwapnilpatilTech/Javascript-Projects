@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Multilevel Inheritance -->
+    <script>
+        // Base Class: Indian
+class Indian {
+    constructor(adharNo, birthPlace) {
+        this.adharNo = adharNo;
+        this.birthPlace = birthPlace;
+    }
+
+    print() {
+        document.writeln(`<br>Adhar No: ${this.adharNo}, Birth Place: ${this.birthPlace}`);
+    }
+}
+
+// Intermediate Class: Person 
+class Person extends Indian {
+    constructor(adharNo, birthPlace, name, age, gender) {
+        super(adharNo, birthPlace);
+        this.name = name;
+        this.age = age;
+        this.gender = gender;
+    }
+
+    printcor() {
+        document.writeln(`<br>Name: ${this.name}, Age: ${this.age}, Gender: ${this.gender}`);
+    }
+}
+
+// Derived Class: Employee (inherits from Person)
+class Employee extends Person {
+    constructor(adharNo, birthPlace, name, age, gender, id, salary, role) {
+        super(adharNo, birthPlace, name, age, gender);
+        this.id = id;
+        this.salary = salary;
+        this.role = role;
+    }
+
+    printemp() {
+        document.writeln(`<br>ID: ${this.id}, Salary: ${this.salary}, Role: ${this.role}`);
+    }
+}
+
+// Creating Employee object
+const emp = new Employee("1234-5678-9101", "Maharastra", "Aman", 25, "Male", 101, 45000, " Engineer");
+
+// Details using multilevel inheritance
+document.writeln("\nEmployee Information (Using Multilevel Inheritance):");
+emp.printcor();
+emp.printemp();
+emp.print();
+
+    </script>
+</body>
+</html>
