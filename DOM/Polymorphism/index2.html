@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+class School {
+    constructor(name, year) {
+        this.name = name;
+        this.year = year;
+    }
+
+    print() {
+        document.writeln(`<br>School: ${this.name}, Established: ${this.year}`);
+    }
+}
+
+class Student extends School {
+    constructor(name, std, school, year) {
+        super(school, year);  
+        this.studentName = name;
+        this.std = std;
+    }
+
+    // Overriding the display() method
+    print() {
+        document.writeln(`<br>Student: ${this.studentName}, Standard: ${this.std}, School: ${this.name}, Year: ${this.year}`);
+    }
+}
+
+// Creating objects
+const student1 = new Student("Amol", "12th", "SGVS High School", 2000);
+const student2 = new Student("Raj", "10th", "St. Xavier's", 2002);
+const student3 = new Student("vishal", "11th", "New Modern School", 2006);
+
+// Displaying details using overridden method
+console.log("\nMethod Overriding - Student Details:");
+student1.print();
+student2.print();
+student3.print();
+
+    </script>
+</body>
+</html>

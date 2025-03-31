@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Polymorphism
+        // Method overloading function to find the sum of 2 to 4 arguments
+        function sum(no) {
+    let value = 0;  // Initialize sum variable
+
+    
+    for (let i = 0; i < args.length; i++) {
+        value += no[i];
+    }
+
+    console.log(`Sum of ${no.join(", ")} = ${value}`);
+}
+
+
+
+// Calling the function with different numbers of arguments
+console.log("\nMethod Overloading - Sum of Arguments:");
+sum(10, 20);          // Sum of 2 arguments
+sum(5, 15, 25);        
+sum(1, 2, 3, 4);       
+sum(10);               
+sum(1, 2, 3, 4, 5);    
+
+    </script>
+</body>
+</html>
