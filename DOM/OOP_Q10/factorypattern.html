@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+               FactoryPattern (VehicleManufacturing)
+      class VehicleFactory {
+       static createVehicle(type, brand, year) {
+       if (type === "car") return new Car(brand, year, "Petrol");
+       if (type === "bike") return new Vehicle(brand, year);
+       return null;
+       }
+      }
+      const myCar = VehicleFactory.createVehicle("car", "Toyota", 2023);
+      console.log(myCar.getDetails());
+    </script>
+  </body>
+</html> 

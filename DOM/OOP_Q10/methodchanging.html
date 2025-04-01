@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      MethodChaining(GameInventory);
+      class Player {
+        constructor() {
+          this.inventory = [];
+          this.weaponLevel = 1;
+        }
+        collectItem(item) {
+          this.inventory.push(item);
+          return this;
+        }
+        upgradeWeapon(level) {
+          this.weaponLevel = level;
+          return this;
+        }
+        showInventory() {
+          console.log(
+            `Inventory: ${this.inventory}, Weapon Level: ${this.weaponLevel}`
+          );
+          return this;
+        }
+      }
+      const player = new Player();
+      player.collectItem("Sword").upgradeWeapon(3).showInventory();
+    </script>
+  </body>
+</html>

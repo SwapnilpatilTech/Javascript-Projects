@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+             Composition (CompanyEmployeeSystem)
+      class Employee {
+       constructor(name, position) {
+       this.name = name;
+       this.position = position;
+       }
+      }
+      class Department {
+       constructor(name) {
+       this.name = name;
+       this.employees = [];
+       }
+       addEmployee(employee) {
+       this.employees.push(employee);
+       }
+       listEmployees() {
+       return this.employees.map(emp => emp.name);
+       }
+      }
+      const hr = new Department("HR");
+      hr.addEmployee(new Employee("Alice", "Manager"));
+      console.log(hr.listEmployees());
+    </script>
+  </body>
+</html>

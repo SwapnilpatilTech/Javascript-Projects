@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        StaticMethods & Properties (MovieRatingSystem)
+class Movie {
+ static totalRatingsCount = 0;
+ constructor(title) {
+ this.title = title;
+ this.ratings = [];
+ }
+ addRating(rating) {
+ this.ratings.push(rating);
+ Movie.totalRatingsCount++;
+ }
+}
+const movie1 = new Movie("Inception");
+movie1.addRating(5);
+console.log(Movie.totalRatingsCount);
+    </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+          Inheritance (VehicleRentalSystem)
+      class Vehicle {
+       constructor(brand, year) {
+       this.brand = brand;
+       this.year = year;
+       }
+       getDetails() {
+       return `${this.brand} - ${this.year}`;
+       }
+      }
+      class Car extends Vehicle {
+       constructor(brand, year, fuelType) {
+       super(brand, year);
+       this.fuelType = fuelType;
+       }
+       getDetails() {
+       return `${super.getDetails()}, Fuel Type: ${this.fuelType}`;
+       }
+      }
+      class ElectricCar extends Car {
+       constructor(brand, year, fuelType, batteryCapacity) {
+       super(brand, year, fuelType);
+       this.batteryCapacity = batteryCapacity;
+       }
+       getDetails() {
+       return `${super.getDetails()}, Battery: ${this.batteryCapacity} kWh`;
+       }
+      }
+      const tesla = new ElectricCar("Tesla", 2022, "Electric", 100);
+      console.log(tesla.getDetails());
+    </script>
+  </body>
+</html>

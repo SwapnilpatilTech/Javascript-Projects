@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+             Getter & Setter (StudentGradingSystem)
+      class Student {
+       constructor() {
+       this._percentage = 0;
+       }
+       set percentage(value) {
+       this._percentage = value;
+       }
+       get grade() {
+       if (this._percentage >= 85) return "A";
+       if (this._percentage >= 70) return "B";
+       return "C";
+       }
+      }
+      const student = new Student();
+      student.percentage = 85;
+      console.log(student.grade);
+    </script>
+  </body>
+</html>
