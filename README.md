@@ -9,8 +9,9 @@
 <h3>This folder contains a curated collection of JavaScript logical programs designed to improve your problem-solving skills and help you build a strong foundation in programming logic. Each file is structured to solve a specific challenge with clean and easy-to-understand code 💡
 
 </h3>
-<h1>📄 File | 🧠 Description
-palindrome.js | Checks if a string/number is a palindrome
+<h1>📄 File | 🧠 Description</h1>
+
+<h4>palindrome.js | Checks if a string/number is a palindrome
 prime.js | Determines whether a number is prime
 fibonacci.js | Generates Fibonacci sequence up to N terms
 factorial.js | Calculates factorial using loop and recursion
@@ -29,4 +30,4 @@ merge-arrays.js | Merges two arrays without duplicates
 number-to-binary.js | Converts decimal to binary
 pattern-printing.js | Star and number patterns using loops
 anagram-check.js | Checks if two strings are anagrams
-missing-number.js | Finds missing number in a sequence</h1>
+missing-number.js | Finds missing number in a sequence</h4>
