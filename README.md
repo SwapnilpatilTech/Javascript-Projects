@@ -4,7 +4,6 @@
 
 </h3>
 
-<h1>🧠 JavaScript Logical Programs – Practice & Mastery</h1>
 
 <h3>This folder contains a curated collection of JavaScript logical programs designed to improve your problem-solving skills and help you build a strong foundation in programming logic. Each file is structured to solve a specific challenge with clean and easy-to-understand code 💡
 
